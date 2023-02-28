@@ -1,0 +1,83 @@
+body {
+  font-family: "Mukta", sans-serif;
+}
+
+button {
+  border-radius: 2px;
+  border-width: 1px;
+  display: inline;
+  padding: 3px 10px;
+}
+
+h1 {
+  color: black;
+  display: inline;
+  font-size: 80pt;
+}
+
+h2 {
+  color: black;
+  display: inline;
+  font-size: 50pt;
+}
+
+h3 {
+  color: black;
+  display: inline;
+  font-size: 30pt;
+}
+
+label {
+  margin-bottom: 10px;
+}
+
+p {
+  color: black;
+  margin: 0;
+  padding: 0;
+}
+
+strong {
+  color: black;
+  font-size: 14pt;
+}
+
+.bg-image {
+  position: fixed;
+}
+
+.row {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.cloud-sun-large {
+  color: black;
+  font-size: 80pt;
+  margin-bottom: 30px;
+}
+
+.cloud-sun-med {
+  color: black;
+  font-size: 50pt;
+}
+
+.cloud-sun-small {
+  color: black;
+  font-size: 30pt;
+}
+
+.cloud-small {
+  color: black;
+  font-size: 30pt;
+}
+
+.sun-small {
+  color: black;
+  font-size: 30pt;
+}
+
+#app-container {
+  padding: 40px;
+  position: relative;
+}

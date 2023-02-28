@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles/homepage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <img src="src/sun-cloud.jpg" alt="" class="bg-image">
+    <div class="container" id="app-container">
+      <div class="row">
+        <div class="col-4">
+          <p><strong>Today's weather in</strong></p>
+          <h3 id="current-city">London</h3>
+        </div>
+        <div class="col-4">
+          <p><strong>Day and time</strong></p>
+          <h3 id="current-day-and-time">Day 00:00</h3>
+        </div>
+        <div class="col-4">
+          <form>
+            <label for="city"><strong>Search for a city</strong></label>
+            <br />
+            <input type="text" name="city" id="input-city" required />
+            <input type="submit" value="Search" />
+          </form>
+          <br />
+          <button id="user-location">Current location</button>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <p>
+              <strong>Current</strong>
+              <br />
+              <h1 id="current-temp">2°C </h1>
+              <i class="fa-solid fa-cloud-sun cloud-sun-large"></i>
+              <p>Sunny spells and a slight breeze</p><br />
+              <p>
+                Precipitation: 5% <br/>
+                Wind: NW 5mph
+              </p>
+            </p>
+          </div>
+         <!--  <div class="col-2">
+            <p>
+              <strong>Day</strong>
+              <br />
+              <h2>4° </h2>
+              <i class="fa-solid fa-cloud-sun cloud-sun-med"></i>
+            </p>
+          </div>
+          <div class="col-2">
+            <p>
+              <strong>Night</strong>
+              <br />
+              <h2>-1° </h2>
+              <i class="fa-solid fa-cloud-sun cloud-sun-med"></i>
+            </p>
+          </div> -->
+        </div>
+        <div class="row next-5-days">
+          <div class="col-2">
+            <p><strong>Tomorrow</strong></p><br />
+            <h3>5°</h3>
+            <i class="fa-solid fa-cloud cloud-small"></i>
+          </div>
+          <div class="col-2">
+            <p><strong>Wednesday</strong></p><br />
+            <h3>7°</h3>
+            <i class="fa-solid fa-cloud cloud-small"></i>
+          </div>
+          <div class="col-2">
+            <p><strong>Thursday</strong></p><br />
+            <h3>7°</h3>
+            <i class="fa-solid fa-cloud-sun cloud-sun-small"></i>
+          </div>
+          <div class="col-2">
+            <p><strong>Friday</strong></p><br />
+            <h3>11°</h3>
+            <i class="fa-solid fa-cloud-sun cloud-sun-small"></i>
+          </div>
+          <div class="col-2">
+            <p><strong>Saturday</strong></p><br />
+            <h3>12°</h3>
+            <i class="fa-solid fa-sun sun-small"></i>
+          </div>
+          <div class="col-2">
+            <p><strong>Sunday</strong></p><br />
+            <h3>7°</h3>
+            <i class="fa-solid fa-cloud-sun cloud-sun-small"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  <script src="https://kit.fontawesome.com/e0ad2f3266.js" crossorigin="anonymous"></script>
+  <script src="src/index.js"></script>
+  </body>
+</html>
